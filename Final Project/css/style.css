@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     height: 3000px;
-}
+} */
 
 
 /* Css of Index.html */
@@ -385,7 +385,7 @@ body {
     margin-top: -60px;
 }
 
-.productpriceandstars .fa-star {
+.fa-star {
     color: #ffc111;
 }
 
@@ -426,4 +426,172 @@ body {
     left: 273px;
     color: black;
     font-weight: 700;
+}
+.textofpromotion1 a{
+    text-decoration-line: none;
+}
+.productbox{
+    height: 350px;
+    width: 260px;
+    border: #c2bdbd thin solid;
+    box-shadow:  2px 2px 6px 0 rgba(0,0,0,.1),0 1px 1px 0 transparent,0 1px 3px 0 rgba(0,0,0,.12)!important;
+}
+.productbox .imageofproductbox{
+    height: 200px;
+    width: 259px;
+    padding: 30px;
+    border-bottom: thin #c2bdbd solid;
+    position: relative;
+}
+
+.productbox .imageofproductbox img{
+    width: 100%;
+    height: 100%;
+}
+.productbox .productboxinfo{
+    padding: 10px 10px 10px 20px;
+}
+.productbox .productboxinfo .categorynameofproduct{
+    margin-bottom: 0;
+    margin-top: -10px;
+    color: #c2bdbd;
+}
+.productbox .productboxstarandprice p{
+    margin-right: 145px;
+}
+.productbox .productboxstarandprice a{
+    color: #c3c3c3;
+    font-size: 20px;
+}
+.productbox .productboxstarandprice a:hover{
+    color: #ffc111;
+    transition: color 0.7s;
+}
+.producthearticon{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.producthearticon:hover{
+    color: #ffc111;
+    transition: color 0.7s;
+}
+.producteyeicon{
+    position: absolute;
+    top: 35px;
+    right: 18px;
+}
+.producteyeicon:hover{
+    color: #ffc111;
+    transition: color 0.7s;
+}
+.productrefreshicon{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+.productrefreshicon:hover{
+    color: #ffc111;
+    transition: color 0.7s;
+}
+.producthearticon, .producteyeicon,.productrefreshicon{
+cursor: pointer;
+color: #ddd;
+font-size: 20px;
+display: none;
+z-index: 1;
+}
+.productbox:hover .producthearticon{
+    display: block;
+}
+.productbox:hover .producteyeicon{
+    display: block;
+}
+.productbox:hover .productrefreshicon{
+    display: block;
+}
+.productsfilter{
+    border-bottom: #c2bdbd solid thin;
+}
+.productsfilter a{
+    text-decoration-line: none;
+    color: #201e1e;
+    font-size: 14px;
+    margin-right: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.activefilter{
+    border-bottom: thick solid #ffc111;
+}
+
+/*Footer*/
+.footerrow{
+    min-height: 320px;
+    background-color: #f7f7f7;
+}
+.footercompany{
+    padding: 40px;
+}
+.footercompany a{
+    color: black;
+    font-size: 35px;
+    text-decoration-line: none;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footerservices{
+    padding: 40px;
+}
+.footerservices li{
+    list-style-type: none;
+    padding-top: 7px;
+}
+.footerservices a{
+    color: black;
+    text-decoration-line: none;
+}
+.lifirstoffooter{
+    font-size: 20px;
+    font-weight: 700;
+}
+.subscription{
+    padding:40px;
+}
+.subscription .subscribetext{
+    font-size: 20px;
+    font-weight: 700;
+}
+.subscription #emailinput{
+    width: 280px;
+    height: auto;
+    border-radius: 5px;
+    border: thin #c2bdbd solid;
+    padding-top: 10px;
+}
+.subscription .buttonsubmitemail{
+    width: 280px;
+    height: 45px;
+    background-color: #ffc111;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    margin-top: 20px;
+}
+.contactusfooter{
+    padding: 40px;
+}
+.contactusfooter .contactusfootertext{
+    font-size: 20px;
+    font-weight: 700;
+}
+.contactusfooter .footericons{
+    color: black;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.contactusfooter .footericons:hover{
+    color: #ffc111;
+    transition: color 0.5s;
 }
