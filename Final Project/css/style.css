@@ -595,3 +595,34 @@ z-index: 1;
     color: #ffc111;
     transition: color 0.5s;
 }
+
+/*CSS of product.html*/
+.collapsible-section{
+    border: thin #c3c3c3 solid;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 120px !important;
+    margin-bottom: 15px;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.1);
+}
+.collapsible-section .titleofcollapsible{
+    font-size: 20px;
+    padding: 10px;
+}
+.collapsibleicon{
+    margin-left: 140px;
+}
+.collapsible-section .contentofcollapsible{
+    display: none;
+}
+.collapsible-section .contentofcollapsible li{
+    list-style-type: none;
+    margin-left: 10px;
+}
+.collapsible-section .contentofcollapsible a {
+    color: black;
+    text-decoration-line: none;
+}
+.active{
+    display: block;
+}
