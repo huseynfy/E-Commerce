@@ -37,7 +37,7 @@
                     <div class="header-menus">
                         <div class="header-menu"><a href="#"><i class="far fa-heart"></i> Wishlist</a></div>
                         <div class="header-menu"><a href="#"><i class="fas fa-retweet"></i> Compare</a></div>
-                        <div class="header-menu"><a href="#"><i class="far fa-user"></i> My Account</a></div>
+                        <div class="header-menu"><a href="login.html"><i class="far fa-user"></i> My Account</a></div>
                     </div>
                 </div>
             </div>
@@ -111,9 +111,9 @@
                             <a href="index.html">Contact Us</a>
                             <a href="index.html">Wishlist</a>
                             <a href="index.html">Compare</a>
-                            <a href="index.html">Checkout</a>
+                            <a href="checkout.html">Checkout</a>
                             <a href="index.html">Cart</a>
-                            <a href="index.html">My Account</a>
+                            <a href="login.html">My Account</a>
                         </div>
                     </div>
                     <div class="navbaritem">
@@ -125,13 +125,13 @@
     </header>
     <section>
         <div class="container-fluid">
-            <div class="row mt-5 ml-3">
+            <div class="row mt-5 ml-2 mb-5">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                  <div class="collapsible-section  ">
                      <h5 class="titleofcollapsible">
-                         Category <i class="fas fa-chevron-down collapsibleicon"></i>
+                         Category <i class="fas fa-chevron-down categoryicon"></i>
                      </h5>
-                     <div class="contentofcollapsible active">
+                     <div class="contentofcollapsible active1">
                          <ul>
                              <li><a href="">Show All</a></li>
                              <li><a href="">Smart Watches</a></li>
@@ -144,34 +144,293 @@
                  </div>
                  <div class="collapsible-section ">
                     <h5 class="titleofcollapsible">
-                        Category <i class="fas fa-chevron-down collapsibleicon"></i>
+                        Brands <i class="fas fa-chevron-down brandsicon"></i>
                     </h5>
                     <div class="contentofcollapsible">
                         <ul>
-                            <li><a href="">Show All</a></li>
-                            <li><a href="">Smart Watches</a></li>
-                            <li><a href="">Airpods</a></li>
-                            <li><a href="">Mac Books</a></li>
-                            <li><a href="">iPhones</a></li>
-                            <li><a href="">Cases</a></li>
+                            <li><a href=""><input type="radio" name="brand" value="showall" id=""> Show All</a></li>
+                            <li><a href=""><input type="radio" name="brand" value="Apple" id=""> Apple</a></li>
+                            <li><a href=""><input type="radio" name="brand" value="Samsung" id=""> Samsung</a></li>
+                            <li><a href=""><input type="radio" name="brand" value="Sony" id=""> Sony</a></li>
+                            <li><a href=""><input type="radio" name="brand" value="Panasonic" id=""> Panasonic</a></li>
+                            <li><a href=""><input type="radio" name="brand" value="Bosch" id=""> Bosch</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="collapsible-section ">
                     <h5 class="titleofcollapsible">
-                        Category <i class="fas fa-chevron-down collapsibleicon"></i>
+                        Price <i class="fas fa-chevron-down priceicon"></i>
                     </h5>
-                    <div class="contentofcollapsible">
-                        <ul>
-                            <li><a href="">Show All</a></li>
-                            <li><a href="">Smart Watches</a></li>
-                            <li><a href="">Airpods</a></li>
-                            <li><a href="">Mac Books</a></li>
-                            <li><a href="">iPhones</a></li>
-                            <li><a href="">Cases</a></li>
-                        </ul>
+                    <div class="contentofcollapsible pricerange">
+                        <label for="pricelow">From</label>
+                        <input type="number" name="pricelow" id="pricelow">
+                        <label for="pricehigh">To</label>
+                        <input type="number" name="pricehigh" id="pricehigh">
                     </div>
                 </div>
+                <div class="productheader mt-5">
+                    <h4>Featured Products</h4>
+                    <hr>
+                </div>
+                <div class="productimageanddetail d-flex">
+                    <a href="#"> <img src="img/airpods.png" width="100px" height="100px"></a>
+                    <a href="#" class="proname">Airpods</a>
+                </div>
+                <div class="productpriceandstars ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>$ 149.99</p>
+                </div>
+                <div class="productimageanddetail d-flex">
+                    <a href="#"> <img src="img/airpods.png" width="100px" height="100px"></a>
+                    <a href="#" class="proname">Airpods</a>
+                </div>
+                <div class="productpriceandstars ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>$ 149.99</p>
+                </div>
+                <div class="productimageanddetail d-flex">
+                    <a href="#"> <img src="img/airpods.png" width="100px" height="100px"></a>
+                    <a href="#" class="proname">Airpods</a>
+                </div>
+                <div class="productpriceandstars ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>$ 149.99</p>
+                </div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12 d-flex flex-wrap">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mr-5 ml-5">
+                    <div class="productbox">
+                        <div class="imageofproductbox">
+                          <a href="#"><img src="img/iwatch.jpg"></a>  
+                        </div>
+                        <span class="producthearticon"><i class="far fa-heart"></i></span>
+                        <span class="producteyeicon"><i class="fas fa-eye"></i></span>
+                        <span class="productrefreshicon"><i class="fas fa-sync"></i></span>
+                        <div class="productboxinfo mt-1">
+                            <p class="categorynameofproduct">Smart Watches</p>
+                            <h5>Apple iWatch Series 5</h5>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <div class="productboxstarandprice d-flex mt-2">
+                            <p>$ 149.99</p>
+                           <a href="#"><i class="fas fa-cart-plus"></i></a> 
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mr-5">
+                        <div class="productbox">
+                            <div class="imageofproductbox">
+                              <a href="#"><img src="img/iwatch.jpg"></a>  
+                            </div>
+                            <span class="producthearticon"><i class="far fa-heart"></i></span>
+                            <span class="producteyeicon"><i class="fas fa-eye"></i></span>
+                            <span class="productrefreshicon"><i class="fas fa-sync"></i></span>
+                            <div class="productboxinfo mt-1">
+                                <p class="categorynameofproduct">Smart Watches</p>
+                                <h5>Apple iWatch Series 5</h5>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <div class="productboxstarandprice d-flex mt-2">
+                                <p>$ 149.99</p>
+                               <a href="#"><i class="fas fa-cart-plus"></i></a> 
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mr-5">
+                            <div class="productbox">
+                                <div class="imageofproductbox">
+                                  <a href="#"><img src="img/iwatch.jpg"></a>  
+                                </div>
+                                <span class="producthearticon"><i class="far fa-heart"></i></span>
+                                <span class="producteyeicon"><i class="fas fa-eye"></i></span>
+                                <span class="productrefreshicon"><i class="fas fa-sync"></i></span>
+                                <div class="productboxinfo mt-1">
+                                    <p class="categorynameofproduct">Smart Watches</p>
+                                    <h5>Apple iWatch Series 5</h5>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <div class="productboxstarandprice d-flex mt-2">
+                                    <p>$ 149.99</p>
+                                   <a href="#"><i class="fas fa-cart-plus"></i></a> 
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mr-5 ml-5 mt-3">
+                                <div class="productbox">
+                                    <div class="imageofproductbox">
+                                      <a href="#"><img src="img/iwatch.jpg"></a>  
+                                    </div>
+                                    <span class="producthearticon"><i class="far fa-heart"></i></span>
+                                    <span class="producteyeicon"><i class="fas fa-eye"></i></span>
+                                    <span class="productrefreshicon"><i class="fas fa-sync"></i></span>
+                                    <div class="productboxinfo mt-1">
+                                        <p class="categorynameofproduct">Smart Watches</p>
+                                        <h5>Apple iWatch Series 5</h5>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <div class="productboxstarandprice d-flex mt-2">
+                                        <p>$ 149.99</p>
+                                       <a href="#"><i class="fas fa-cart-plus"></i></a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mr-5 mt-3">
+                                    <div class="productbox">
+                                        <div class="imageofproductbox">
+                                          <a href="#"><img src="img/iwatch.jpg"></a>  
+                                        </div>
+                                        <span class="producthearticon"><i class="far fa-heart"></i></span>
+                                        <span class="producteyeicon"><i class="fas fa-eye"></i></span>
+                                        <span class="productrefreshicon"><i class="fas fa-sync"></i></span>
+                                        <div class="productboxinfo mt-1">
+                                            <p class="categorynameofproduct">Smart Watches</p>
+                                            <h5>Apple iWatch Series 5</h5>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <div class="productboxstarandprice d-flex mt-2">
+                                            <p>$ 149.99</p>
+                                           <a href="#"><i class="fas fa-cart-plus"></i></a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mr-5 mt-3">
+                                        <div class="productbox">
+                                            <div class="imageofproductbox">
+                                              <a href="#"><img src="img/iwatch.jpg"></a>  
+                                            </div>
+                                            <span class="producthearticon"><i class="far fa-heart"></i></span>
+                                            <span class="producteyeicon"><i class="fas fa-eye"></i></span>
+                                            <span class="productrefreshicon"><i class="fas fa-sync"></i></span>
+                                            <div class="productboxinfo mt-1">
+                                                <p class="categorynameofproduct">Smart Watches</p>
+                                                <h5>Apple iWatch Series 5</h5>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <div class="productboxstarandprice d-flex mt-2">
+                                                <p>$ 149.99</p>
+                                               <a href="#"><i class="fas fa-cart-plus"></i></a> 
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12 mr-5 ml-5 mt-3">
+                                            <div class="productbox">
+                                                <div class="imageofproductbox">
+                                                  <a href="#"><img src="img/iwatch.jpg"></a>  
+                                                </div>
+                                                <span class="producthearticon"><i class="far fa-heart"></i></span>
+                                                <span class="producteyeicon"><i class="fas fa-eye"></i></span>
+                                                <span class="productrefreshicon"><i class="fas fa-sync"></i></span>
+                                                <div class="productboxinfo mt-1">
+                                                    <p class="categorynameofproduct">Smart Watches</p>
+                                                    <h5>Apple iWatch Series 5</h5>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <div class="productboxstarandprice d-flex mt-2">
+                                                    <p>$ 149.99</p>
+                                                   <a href="#"><i class="fas fa-cart-plus"></i></a> 
+                                                </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-12 mr-5 mt-3">
+                                                <div class="productbox">
+                                                    <div class="imageofproductbox">
+                                                      <a href="#"><img src="img/iwatch.jpg"></a>  
+                                                    </div>
+                                                    <span class="producthearticon"><i class="far fa-heart"></i></span>
+                                                    <span class="producteyeicon"><i class="fas fa-eye"></i></span>
+                                                    <span class="productrefreshicon"><i class="fas fa-sync"></i></span>
+                                                    <div class="productboxinfo mt-1">
+                                                        <p class="categorynameofproduct">Smart Watches</p>
+                                                        <h5>Apple iWatch Series 5</h5>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <div class="productboxstarandprice d-flex mt-2">
+                                                        <p>$ 149.99</p>
+                                                       <a href="#"><i class="fas fa-cart-plus"></i></a> 
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-12 mr-5 mt-3">
+                                                    <div class="productbox">
+                                                        <div class="imageofproductbox">
+                                                          <a href="#"><img src="img/iwatch.jpg"></a>  
+                                                        </div>
+                                                        <span class="producthearticon"><i class="far fa-heart"></i></span>
+                                                        <span class="producteyeicon"><i class="fas fa-eye"></i></span>
+                                                        <span class="productrefreshicon"><i class="fas fa-sync"></i></span>
+                                                        <div class="productboxinfo mt-1">
+                                                            <p class="categorynameofproduct">Smart Watches</p>
+                                                            <h5>Apple iWatch Series 5</h5>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <div class="productboxstarandprice d-flex mt-2">
+                                                            <p>$ 149.99</p>
+                                                           <a href="#"><i class="fas fa-cart-plus"></i></a> 
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                        <div class="pagination1 mt-5">
+                                        <nav aria-label="...">
+                                            <ul class="pagination pagination-sm">
+                                              <li class="page-item active" aria-current="page">
+                                                <span class="page-link">
+                                                  1
+                                                  <span class="sr-only">(current)</span>
+                                                </span>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            </ul>
+                                          </nav>
+                                        </div>
                 </div>
             </div>
         </div>
