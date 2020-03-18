@@ -14,6 +14,9 @@ $(document).ready(function(){
             })
         }
     })
+    $(".burgermenu").click(function(){
+        $(".rownavbar").toggle("d-none")
+    })
 
 })
 

@@ -16,6 +16,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-9 col-sm-12 d-flex header">
+                    <div class="burgermenu">
+                      <i class="fas fa-align-justify"></i>
+                    </div>
                     <div class="dropdown-currency">
                         <button class="btncurrency"> USD <i class="fas fa-caret-down"></i> </button>
                         <div class="dropdown-currency-content">
@@ -43,7 +46,8 @@
             </div>
             <div class="row header2">
                 <div class="col-lg-2 col-md-6 col-sm-12">
-                    <h2 class="company-name">Huseyn</h2>
+                    <div class="company-name"> <a href="index.html">Huseyn</a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <input class="search" type="search" placeholder="Search for something..." aria-label="Search">
@@ -54,14 +58,31 @@
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12 d-flex">
                     <div class="cart">
-                        <span> <i class="fas fa-shopping-cart"></i>
-            <sup class="cartsup">0</sup></span>
-                        <p class="cartprice">$0.00</p>
+                       <button>
+                        <a href="cart.html"> <i class="fas fa-shopping-cart"></i> 
+                        <sup class="cartsup">0</sup></a> <p class="cartprice">$0.00</p>
+                    </button> 
+                    <div class="dropdowncart">
+                        <div class="d-flex">
+                            <p>check cart </p>
+                            <p> 1 item</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="img/airpods.png" width="80px" height="50px">
+                            <p>apple airpods 2</p>
+                            <p>1 X $ 149.99</p>
+                            <span><i class="fas fa-trash"></i></span>
+                        </div>
+                        <div class="d-flex">
+                            <p>subtotal:</p>
+                            <p>$149.99</p>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-6 col-sm-12 d-flex justify-content-start navbar ">
+            <div class="row rownavbar">
+                <div class="col-lg-12 col-md-6 col-sm-12 d-flex justify-content-start navbar">
                     <div class="navbaritem">
                         <a href="index.html">Home</a>
                     </div>
@@ -101,7 +122,7 @@
                         </div>
                     </div>
                     <div class="navbaritem">
-                        <a href="#">Blog</a>
+                        <a href="blog.html">Blog</a>
                     </div>
                     <div class="dropdownpages">
                         <button class="btnpages"> <a href="#">Pages </a>  <i class="fas fa-caret-down"></i></button>
@@ -117,12 +138,13 @@
                         </div>
                     </div>
                     <div class="navbaritem">
-                        <a href="#">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+   
     <section style="overflow: hidden;">
         <div class="row">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
