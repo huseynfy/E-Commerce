@@ -177,27 +177,6 @@
     font-size: 17px;
     font-weight: 700;
 }
-
-/* .cart {
-    padding: 30px;
-    display: flex;
-}
-
-.cart .cartsup {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    margin-left: -8px;
-    padding: 1px;
-}
-
-.cart .cartprice {
-    margin-left: 10px;
-    font-size: 15px;
-    font-weight: 600;
-} */
-
 .navbar {
     max-width: 2000px;
     height: 70px;
@@ -215,7 +194,106 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-
+.dropdowncart{
+    overflow: hidden;
+    float: left;
+}
+#emptycart{
+    margin: 10px 0 0 35px;
+}
+.btncart{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #201f1f;
+    padding: 10px;
+    background-color: inherit;
+    margin-left: 40px;
+    margin-top: 27px;
+}
+.btncart a{
+    color: black;
+    text-decoration-line: none;
+}
+.cartsup{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: -8px;
+    padding: 1px;
+}
+.cartprice {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 0px;
+}
+.dropdowncartcontent{
+    display: none;
+    margin-left: -20px;
+    margin-right: 30px;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 230px;
+    min-height: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    border-top: thick orange solid;
+    padding: 10px;
+}
+.checkcartwritings{
+    border-bottom: thin solid #c2bdbd;
+    padding-top: 10px;
+}
+.checkcart{
+    font-size: 14px;
+    font-weight: 600;
+    color: #444141;
+    text-transform: uppercase;
+}
+.checkcart:hover{
+    color: black;
+    text-decoration-line: none;
+}
+.productsincartindex{
+    padding: 20px 0 20px 0;
+    border-bottom: thin solid #c2bdbd;
+}
+#productnameincartindex{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: -40px;
+}
+#productpriceincartindex{
+    margin-left: -155px;
+    margin-top: 24px;
+    font-size: 12px;
+    color: #575555;
+}
+#deletecartitemindex{
+    color: black;
+}
+#deletecartitemindex:hover{
+    color: #ffc111;
+    transition: color 0.5s;
+}
+#productsubtotalincartindex{
+    color: #797373;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+#productsubtotalpriceincartindex{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.fa-shopping-cart{
+    font-size: 20px;
+}
 .dropdownshop {
     overflow: hidden;
     float: left;
@@ -245,7 +323,7 @@
     background-color: white;
     width: 800px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 11;
 }
 
 .dropdown-shop-content .row1 {
@@ -295,10 +373,50 @@
 }
 
 /* Slider*/
-
+.bootstrapcarousel{
+    position: relative !important;
+}
 .imageslider {
     width: 100% !important;
     height: 600px !important;
+}
+.slidertext{
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 15%;
+}
+.slidertexthead{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 0;
+    min-width: 300px;
+    min-height: 50px;
+    background-color: black;
+}
+.slidertextinfo{
+    color: white;
+    font-size: 20px;
+    margin-top: 0;
+    background-color: black;
+    max-width: 120px;
+    min-height: 30px;
+}
+.btnshopslider{
+    width: 150px;
+    height: 45px;
+    border: none;
+    background-color: #ffc111;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btnshopslider a{
+    color: black;
+    text-decoration-line: none;
 }
 
 /* Slider End*/
@@ -332,7 +450,7 @@
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 11;
     border-top: thick orange solid;
 }
 
@@ -534,6 +652,13 @@
 .activefilter {
     border-bottom: thick solid #ffc111;
     margin-bottom: 0px;
+    transition: border 0.5s;
+}
+.productfiltertab{
+    margin-left: 10px;
+}
+.productfiltertab:hover{
+    cursor: pointer;
 }
 
 /*Footer*/
@@ -636,7 +761,7 @@
     cursor: pointer;
     min-width: 120px !important;
     margin-bottom: 15px;
-    /* box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .collapsible-section .titleofcollapsible {
@@ -645,15 +770,15 @@
 }
 
 .categoryicon {
-    margin-left: 140px;
+    margin-left: 170px;
 }
 
 .brandsicon {
-    margin-left: 160px;
+    margin-left: 188px;
 }
 
 .priceicon {
-    margin-left: 178px;
+    margin-left: 205px;
 }
 
 .collapsible-section .contentofcollapsible {
@@ -687,20 +812,36 @@
     width: 70px;
     height: 20px;
 }
-
-.pagination1 {
-    margin-left: 440px;
-}
-
 .page-item {
     color: #ffc111 !important;
+}
+.pagination1{
+    margin-left: 58%;
+    margin-top: 3%;
+}
+.paginationul{
+    list-style-type: none;
+}
+.paginationa{
+    color: black;
+    text-decoration-line: none;
+    padding: 10px;
+}
+.paginationa:hover{
+    color: black;
+    text-decoration-line: none;
+}
+.activepagination{
+    width: 20px !important;
+    height: 10px !important;
+    background-color: #ffc111;
 }
 
 /*CSS of login.html*/
 
 .loginregisterbox {
     max-width: 1394px;
-    height: 300px;
+    min-height: 300px;
     border: thin solid #c3c3c3;
     margin: 50px 20px 50px 20px;
     box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.1);
@@ -711,7 +852,7 @@
     font-size: 22px;
     font-weight: 600;
     border-bottom: thin solid #c3c3c3;
-    width: 570px;
+    max-width: 570px;
 }
 
 #loginemail, #loginpassword {
@@ -737,7 +878,7 @@
     font-size: 22px;
     font-weight: 600;
     border-bottom: thin solid #c3c3c3;
-    width: 570px;
+    max-width: 570px;
 }
 
 .registerdesciption {
@@ -1146,7 +1287,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     font-weight: 600;
     margin-left: 40px;
     margin-top: 40px;
-    width: 900px;
+    max-width: 900px;
     border-bottom: thin solid #575555;
 }
 #infoaboutcommenting{
@@ -1156,7 +1297,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 /*CSS of card.html*/
 .card-content{
-    width: 1100px;
     min-height: 100px;
     margin-top: 50px;
     border: thin solid #c2bdbd;
@@ -1224,7 +1364,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 .emptycard{
     margin-left: 320px;
-    width: 450px;
+    max-width: 450px;
     height: 30px;
     border-radius: 50px;
     background-color: red;
@@ -1350,8 +1490,35 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     margin: 20px 0 20px 10px;
     border-radius: 5px;
 }
-
-
+.backtotop{
+    width: 50px;
+    height: 50px;
+    background-color: #ffc111;
+    color: black;
+    text-align: center;
+    margin-left: 95%;
+    margin-bottom: 2%;
+}
+.backtotop a{
+    color: black;
+    text-decoration-line: none;
+    font-size: 30px;
+}
+.darkmode{
+    margin: -70px 0 0 20px;
+    width: 100px;
+    height: 45px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.darkbody{
+    background-color: black;
+    color: white;
+}
 
 /* Responsiveness */
 @media screen and (max-width:600px){
@@ -1373,9 +1540,12 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     .company-name{
         text-align: center;
     }
-    .cart{
+    .dropdowncart{
         margin-top: -90px !important;
         margin-left: 300px;
+    }
+    .dropdowncartcontent{
+        margin-left: -50px !important;
     }
     .dropdown-currency-content{
         max-width: 300px;
@@ -1450,11 +1620,37 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     .contactusdetails{
         width: 250px;
     }
-    
+    .categoryicon{
+        margin-left: 300px;
+    }
+    .brandsicon{
+        margin-left: 320px;
+    }
+    .priceicon{
+        margin-left: 338px;
+    }
+    .pagination1{
+        margin-left: 185px;
+        margin-top: 40px;
+    }
+    #loginemail, #loginpassword,#registeremail{
+        width: 380px !important;
+    }
+    .inputstext{
+        width: 300px;
+    }
+    #grandtotal{
+        margin: -5px !important;
+    }
+    .emptycard{
+        margin-left: 40px;
+    }
+    .btncard1{
+        margin-left: 180px;
+    }
+    .miniinputs,#subjectofcomment,#textareaforcomment{
+        width: 400px;
+    }
 }
-@media screen and (max-width:890px){
-   .header{
-       width: 100% !important;
-   }
-}
+
 /* Responsiveness End*/

@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link href="img/lion.png" rel="icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header>
         <div class="container-fluid">
@@ -57,25 +54,28 @@
                     <p class="phone"><i class="fas fa-phone"></i>Hotline:+994502059939</p>
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12 d-flex">
-                    <div class="cart">
-                       <button>
-                        <a href="cart.html"> <i class="fas fa-shopping-cart"></i> 
-                        <sup class="cartsup">0</sup></a> <p class="cartprice">$0.00</p>
-                    </button> 
                     <div class="dropdowncart">
-                        <div class="d-flex">
-                            <p>check cart </p>
-                            <p> 1 item</p>
+                       <button class="btncart d-flex">
+                        <a href="#"> <i class="fas fa-shopping-cart"></i> 
+                        <sup class="cartsup">0</sup><span class="cartprice">$0.00</span></a> 
+                    </button> 
+                    <div class="dropdowncartcontent">
+                        <div class="d-flex justify-content-between checkcartwritings">
+                            <a href="cart.html" class="checkcart"> check cart</a>
+                            <p class="checkcart">1 item</p>
                         </div>
-                        <div class="d-flex">
-                            <img src="img/airpods.png" width="80px" height="50px">
-                            <p>apple airpods 2</p>
-                            <p>1 X $ 149.99</p>
-                            <span><i class="fas fa-trash"></i></span>
+                        <div>
+                            <p id="emptycart">Your cart is empty</p>
                         </div>
-                        <div class="d-flex">
-                            <p>subtotal:</p>
-                            <p>$149.99</p>
+                        <div class="d-flex justify-content-between productsincartindex">
+                            <img src="img/airpods.png" width="50px" height="50px">
+                            <span id="productnameincartindex">apple airpods 2</span>
+                            <span id="productpriceincartindex">1 X $ 149.99</span>
+                            <a href="#" id="deletecartitemindex"><i class="fas fa-trash"></i></a>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p id="productsubtotalincartindex">subtotal:</p>
+                            <p id="productsubtotalpriceincartindex">$149.99</p>
                         </div>
                     </div>
                     </div>
@@ -90,7 +90,7 @@
                         <a href="products.html">Products</a>
                     </div>
                     <div class="dropdownshop">
-                        <button class="btnshop"><a href="#" >Shop</a> <i class="fas fa-caret-down"></i></button>
+                        <button class="btnshop"><a href="#">Shop</a> <i class="fas fa-caret-down"></i></button>
                         <div class="dropdown-shop-content">
                             <div class="row1">
                                 <div class="column">
@@ -127,13 +127,13 @@
                     <div class="dropdownpages">
                         <button class="btnpages"> <a href="#">Pages </a>  <i class="fas fa-caret-down"></i></button>
                         <div class="dropdown-pages-content">
-                            <a href="index.html">About Us</a>
-                            <a href="index.html">FAQ</a>
-                            <a href="index.html">Contact Us</a>
-                            <a href="index.html">Wishlist</a>
-                            <a href="index.html">Compare</a>
+                            <a href="#">About Us</a>
+                            <a href="#">FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="#">Wishlist</a>
+                            <a href="#">Compare</a>
                             <a href="checkout.html">Checkout</a>
-                            <a href="index.html">Cart</a>
+                            <a href="cart.html">Cart</a>
                             <a href="login.html">My Account</a>
                         </div>
                     </div>
@@ -153,15 +153,31 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <div class="carousel-inner ">
+                    <div class="carousel-item bootstrapcarousel active">
+                        <img src="img/iphone11pro.jpg" class="d-block w-100 imageslider">
+                        <div class="slidertext">
+                        <p class="slidertexthead">Biggest Sale Ever!</p>
+                        <p class="slidertextinfo">Don't Miss It</p>
+                        <button class="btnshopslider"><a href="products.html">Shop Now</a></button>
+                        </div>
+                        
+                    </div>
+                    <div class="carousel-item bootstrapcarousel">
                         <img src="img/xsgold.jpg" class="d-block w-100 imageslider">
+                        <div class="slidertext">
+                            <p class="slidertexthead">Biggest Sale Ever!</p>
+                            <p class="slidertextinfo">Don't Miss It</p>
+                            <button class="btnshopslider"><a href="products.html">Shop Now</a></button>
+                            </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/macfamily.jpg" class="d-block w-100 imageslider">
-                    </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item bootstrapcarousel">
                         <img src="img/macbooks.png" class="d-block w-100 imageslider">
+                        <div class="slidertext">
+                            <p class="slidertexthead">Biggest Sale Ever!</p>
+                            <p class="slidertextinfo">Don't Miss It</p>
+                            <button class="btnshopslider"><a href="products.html">Shop Now</a></button>
+                            </div>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -361,12 +377,12 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-12 d-flex productsfilter">
-                    <a href="#"  class="activefilter"><p>Featured Products</p></a>
-                    <a href="#"><p>Latest Products</p></a>
-                    <a href="#"><p>On Sale Products</p></a>
+                    <span class="activefilter productfiltertab" data-index=1><p>Featured Products</p></span>
+                    <span class="productfiltertab" data-index="2"><p>Latest Products</p></span>
+                    <span class="productfiltertab" data-index="3"><p>On Sale Products</p></span>
                 </div>
             </div>
-            <div class="row mt-3">
+            <div class="row productrow mt-3"  data-index="1">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="productbox">
                         <div class="imageofproductbox">
@@ -384,7 +400,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <div class="productboxstarandprice d-flex mt-2">
-                            <p>$ 149.99</p>
+                            <p>$ 449.99</p>
                            <a href="#"><i class="fas fa-cart-plus"></i></a> 
                         </div>
                         </div>
@@ -407,7 +423,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <div class="productboxstarandprice d-flex mt-2">
-                            <p>$ 149.99</p>
+                            <p>$ 449.99</p>
                            <a href="#"><i class="fas fa-cart-plus"></i></a> 
                         </div>
                         </div>
@@ -430,7 +446,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <div class="productboxstarandprice d-flex mt-2">
-                            <p>$ 149.99</p>
+                            <p>$ 449.99</p>
                            <a href="#"><i class="fas fa-cart-plus"></i></a> 
                         </div>
                         </div>
@@ -453,13 +469,87 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <div class="productboxstarandprice d-flex mt-2">
-                            <p>$ 149.99</p>
+                            <p>$ 449.99</p>
                            <a href="#"><i class="fas fa-cart-plus"></i></a> 
                         </div>
                         </div>
                     </div>
                 </div>
                 </div>
+
+                <div class="row productrow mt-3 d-none" data-index="2">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="productbox">
+                            <div class="imageofproductbox">
+                              <a href="#"><img src="img/progold.jpg"></a>  
+                            </div>
+                            <span class="producthearticon"><i class="far fa-heart"></i></span>
+                            <span class="producteyeicon"><i class="fas fa-eye"></i></span>
+                            <span class="productrefreshicon"><i class="fas fa-sync"></i></span>
+                            <div class="productboxinfo mt-1">
+                                <p class="categorynameofproduct">Smart Phones</p>
+                                <h5>Apple iPhone 11 Pro Gold</h5>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <div class="productboxstarandprice d-flex mt-2">
+                                <p>$ 999.99</p>
+                               <a href="#"><i class="fas fa-cart-plus"></i></a> 
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="productbox">
+                            <div class="imageofproductbox">
+                                <a href="#"><img src="img/progold.jpg"></a>  
+                            </div>
+                            <span class="producthearticon"><i class="far fa-heart"></i></span>
+                            <span class="producteyeicon"><i class="fas fa-eye"></i></span>
+                            <span class="productrefreshicon"><i class="fas fa-sync"></i></span>
+                            <div class="productboxinfo mt-1">
+                                <p class="categorynameofproduct">Smart Phones</p>
+                                <h5>Apple iPhone 11 Pro Gold</h5>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <div class="productboxstarandprice d-flex mt-2">
+                                <p>$ 999.99</p>
+                               <a href="#"><i class="fas fa-cart-plus"></i></a> 
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row productrow mt-3 d-none" data-index="3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="productbox">
+                                <div class="imageofproductbox">
+                                  <a href="#"><img src="img/airpodspro.jpg"></a>  
+                                </div>
+                                <span class="producthearticon"><i class="far fa-heart"></i></span>
+                                <span class="producteyeicon"><i class="fas fa-eye"></i></span>
+                                <span class="productrefreshicon"><i class="fas fa-sync"></i></span>
+                                <div class="productboxinfo mt-1">
+                                    <p class="categorynameofproduct">EarPhones</p>
+                                    <h5>Apple Airpods Pro</h5>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                <div class="productboxstarandprice d-flex mt-2">
+                                    <p>$ 249.99</p>
+                                   <a href="#"><i class="fas fa-cart-plus"></i></a> 
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
         </div>
     </section>
     <footer>
@@ -471,7 +561,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 footerservices">
                     <ul>
-                        <li class="lifirstoffooter"><a href="#" >Services</a></li>
+                        <li class="lifirstoffooter">Services</li>
                         <li><a href="#">Hotel Growth</a></li>
                         <li><a href="#">Hotel Loan</a></li>
                         <li><a href="#">Financial Planning</a></li>
@@ -498,10 +588,14 @@
                        <a href="#"><i class="fab fa-whatsapp footericons"></i></a>
                        <a href="#"><i class="fab fa-linkedin-in footericons"></i></a>
                     </div>
-                    
                 </div>
+                <div class="backtotop">
+                    <a href="#"> <i class="fas fa-angle-up"> </i></a>
+                </div>
+                    <button onclick="myFunction()" class="darkmode">Dark Mode</button>
             </div>
         </div>
+    
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

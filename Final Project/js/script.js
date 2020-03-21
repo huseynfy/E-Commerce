@@ -17,7 +17,10 @@ $(document).ready(function(){
     $(".burgermenu").click(function(){
         $(".rownavbar").toggle("d-none")
     })
-
+    $(".btncart").click(function(){
+        $(".dropdowncartcontent").toggle("d-none")
+    })
+   
 })
 
 //Script for tabs
@@ -44,6 +47,28 @@ for (let menu of menus) {
     })
 }
 
+//Script for Products filter index.html
+
+let filters=document.querySelectorAll(".productsfilter span")
+let filterrows=document.querySelectorAll(".productrow")
+
+for(let filter of filters){
+    filter.addEventListener("click",function(){
+        let active=document.querySelector(".activefilter")
+        active.classList.remove("activefilter")
+        this.classList.add("activefilter")
+
+        let index=this.getAttribute("data-index")
+        for(let filterrow of filterrows){
+            if(filterrow.getAttribute("data-index")==index){
+                filterrow.classList.remove("d-none")
+            }else{
+                filterrow.classList.add("d-none")
+            }
+        }
+    })
+}
+
 
 
  //Script of quantity increase/decrease
@@ -61,3 +86,8 @@ function increaseValue() {
     value--;
     document.getElementById('number').value = value;
   }
+
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("darkbody");
+ }
