@@ -754,14 +754,74 @@
 }
 
 /*CSS of product.html*/
+.producthearticon1 {
+    position: absolute;
+    top: 3%;
+    right:-5%;
+}
+
+.producthearticon1:hover {
+    color: #ffc111;
+    transition: color 0.7s;
+}
+
+.producteyeicon1 {
+    position: absolute;
+    top: 10%;
+    right: -6%;
+}
+
+.producteyeicon1:hover {
+    color: #ffc111;
+    transition: color 0.7s;
+}
+
+.productrefreshicon1 {
+    position: absolute;
+    top: 17%;
+    right: -5%;
+}
+
+.producteyeicon1:hover {
+    color: #ffc111;
+    transition: color 0.7s;
+}
+
+
+
+.productrefreshicon1:hover {
+    color: #ffc111;
+    transition: color 0.7s;
+}
+
+.producthearticon1, .producteyeicon1, .productrefreshicon1 {
+    cursor: pointer;
+    color: #ddd;
+    font-size: 20px;
+    display: none;
+    z-index: 1;
+}
+
+.productbox:hover .producthearticon1 {
+    display: block;
+}
+
+.productbox:hover .producteyeicon1 {
+    display: block;
+}
+
+.productbox:hover .productrefreshicon1 {
+    display: block;
+}
 
 .collapsible-section {
     border: thin #c3c3c3 solid;
     padding: 10px;
     cursor: pointer;
-    min-width: 120px !important;
+    width: 300px;
     margin-bottom: 15px;
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.1);
+    min-height: 40px;
 }
 
 .collapsible-section .titleofcollapsible {
@@ -769,16 +829,9 @@
     padding: 10px;
 }
 
-.categoryicon {
-    margin-left: 170px;
-}
-
-.brandsicon {
-    margin-left: 188px;
-}
-
-.priceicon {
-    margin-left: 205px;
+.categoryicon,.brandsicon,.priceicon {
+    float: right;
+    padding: 10px;
 }
 
 .collapsible-section .contentofcollapsible {
@@ -794,7 +847,10 @@
     color: black;
     text-decoration-line: none;
 }
-
+.collapsible-section .contentofcollapsible a:hover{
+    color: #ffc111;
+    transition: color 0.5s;
+}
 .active1 {
     display: block;
 }
@@ -1473,7 +1529,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     color: rgb(126, 123, 123);
 }
 .inputsincontactus{
-    width:600px;
+    width:550px;
     height: auto;
     border: none;
     border-bottom: #c2bdbd solid thin;
@@ -1652,5 +1708,4 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
         width: 400px;
     }
 }
-
 /* Responsiveness End*/

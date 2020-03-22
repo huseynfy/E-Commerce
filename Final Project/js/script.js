@@ -87,6 +87,7 @@ function increaseValue() {
     document.getElementById('number').value = value;
   }
 
+  // Script for Dark Mode
   function myFunction() {
     var element = document.body;
     element.classList.toggle("darkbody");
